@@ -1,0 +1,3 @@
+git remote add origin <your_GitHub_repository_URL>
+# Replace <your_GitHub_repository_URL> with the URL of your GitHub repository.
+git remote add origin https://github.com/Isteyak12/AOC_Isteyak.git
