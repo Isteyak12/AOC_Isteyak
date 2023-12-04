@@ -7,4 +7,3 @@
   126  git push origin main --force
   127  git status
   128  history
-[A[C[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[B[B[B[B
