@@ -1,0 +1,63 @@
+  120  git init
+  121  git add .
+  122  git commit -m "my-first commit"
+  123  git status
+  124  git remote add origin https://github.com/Isteyak12/AOC_Isteyak.git
+  125  git push origin master --force
+  126  git push origin main --force
+  127  git status
+  128  history
+///////////////////////////////////////////////////
+  120  git init
+  121  git add .
+  122  git commit -m "my-first commit"
+  123  git status
+  124  git remote add origin https://github.com/Isteyak12/AOC_Isteyak.git
+  125  git push origin master --force
+  126  git push origin main --force
+  127  git status
+  128  history
+  129  cat >> note.xtt
+  130  cat >> note.txt
+  131  cat >> note.txt
+  132  cat >> note.txt
+  133  cat note.txt
+  134  git commit -m "hola"
+  135  git add note.txt
+  136  git commit -m "note.txt"
+  137  git push note.txt
+  138  git add note.txt
+  139  git push note.txt
+  140  touch last.txt
+  141  git add last.txt
+  142  git add .
+  143  git commit -m "Add last.txt"
+  144  git push origin main
+  145  history
+  146  cat history > note.txt
+  147  cat history > last.txt
+  148  git push origin main --force
+  149  rm * .txt
+  150  rm .txt
+  151  rm *.txt
+  152  ls
+  153  exit
+  154  clsoe
+  155  close
+  156  pid
+  157  status
+  158  tty
+  159  close tty
+  160  history
+////////////////////////////////////////////
+git remote add origin <your_GitHub_repository_URL>
+# Replace <your_GitHub_repository_URL> with the URL of your GitHub repository.
+git remote add origin https://github.com/Isteyak12/AOC_Isteyak.git
+
+git commit -m "Initial commit"
+# You can replace "Initial commit" with your own meaningful commit message.
+git push -u origin master
+# This pushes the changes from the local 'master' branch to the remote 'master' branch.
+# If you're using a different branch name, replace 'master' accordingly.
+
+git push -u origin main

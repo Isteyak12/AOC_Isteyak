@@ -1,9 +1,0 @@
-  120  git init
-  121  git add .
-  122  git commit -m "my-first commit"
-  123  git status
-  124  git remote add origin https://github.com/Isteyak12/AOC_Isteyak.git
-  125  git push origin master --force
-  126  git push origin main --force
-  127  git status
-  128  history
