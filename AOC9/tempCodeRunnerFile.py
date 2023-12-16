@@ -1,0 +1,49 @@
+from queue import Queue
+
+with open("input.txt", "r") as f:
+    m = [l.strip() for l in f]
+
+    n = {
+        "|": [(0, -1), (0, 1)],
+        "-": [(-1, 0), (1, 0)],
+        "L": [(0, -1), (1, 0)],
+        "J": [(0, -1), (-1, 0)],
+        "7": [(-1, 0), (0, 1)],
+        "F": [(1, 0), (0, 1)],
+    }
+
+    x, y = None, None
+
+    for yi, line in enumerate(m):
+        for xi, c in enumerate(line):
+            if c == "S":
+                x, y = xi, yi
+                break
+
+    assert x is not None
+    assert y is not None
+
+    q = Queue()
+
+    for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+        c = m[y + dy][x + dx]
+        if c in n:
+            for dx2, dy2 in n[c]:
+                if x == x + dx + dx2 and y == y + dy + dy2:
+                    q.put((1, (x + dx, y + dy)))
+
+    dists = {(x, y): 0}
+    assert q.qsize() == 2
+
+    while not q.empty():
+        d, (x, y) = q.get()
+
+        if (x, y) in dists:
+            continue
+
+        dists[(x, y)] = d
+
+        for dx, dy in n[m[y][x]]:
+            q.put((d + 1, (x + dx, y + dy)))
+
+    print(f"Part 1: {max(dists.values())}")
